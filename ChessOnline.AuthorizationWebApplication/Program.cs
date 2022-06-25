@@ -1,6 +1,13 @@
+using Serilog;
+using Serilog.Events;
 using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Host.UseSerilog((context, loggerConfiguration) => loggerConfiguration
+    .WriteTo.Console()
+    .ReadFrom.Configuration(context.Configuration));
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -57,6 +64,7 @@ app.UseStatusCodePages(context =>
     return Task.CompletedTask;
 });
 
+app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 app.MapControllers();
 app.UseRouting();
