@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessOnline.AuthorizationWebApplication", "ChessOnline.AuthorizationWebApplication\ChessOnline.AuthorizationWebApplication.csproj", "{D6C71147-B5DD-4767-AEC5-A6600124D8FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessOnline.Model.Common", "ChessOnline.Model.Common\ChessOnline.Model.Common.csproj", "{F6A9D978-2A3D-41BF-B16C-9FEBF2CD84D0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C71147-B5DD-4767-AEC5-A6600124D8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C71147-B5DD-4767-AEC5-A6600124D8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C71147-B5DD-4767-AEC5-A6600124D8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C71147-B5DD-4767-AEC5-A6600124D8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A9D978-2A3D-41BF-B16C-9FEBF2CD84D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A9D978-2A3D-41BF-B16C-9FEBF2CD84D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A9D978-2A3D-41BF-B16C-9FEBF2CD84D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A9D978-2A3D-41BF-B16C-9FEBF2CD84D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
