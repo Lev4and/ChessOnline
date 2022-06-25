@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  chessonline.authorizationwebapplication:
+    image: ${DOCKER_REGISTRY-}chessonlineauthorizationwebapplication
+    build:
+      context: .
+      dockerfile: ChessOnline.AuthorizationWebApplication/Dockerfile
+  proxy:
+    image: nginx:mainline

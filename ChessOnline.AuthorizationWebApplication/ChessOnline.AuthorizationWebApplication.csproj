@@ -6,9 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
 	<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+	<UserSecretsId>e468be58-4fe0-4daf-b099-007723c58baf</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
