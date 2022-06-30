@@ -6,6 +6,11 @@ services:
     build:
       context: .
       dockerfile: ChessOnline.AuthorizationWebApplication/Dockerfile
+  chessonline.resourcewebapplication:
+    image: ${DOCKER_REGISTRY-}chessonlineresourcewebapplication
+    build:
+      context: .
+      dockerfile: ChessOnline.ResourceWebApplication/Dockerfile
   chessonline.vuejsapp:
     image: chessonlinevuejsapp
     build:
