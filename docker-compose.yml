@@ -6,5 +6,10 @@ services:
     build:
       context: .
       dockerfile: ChessOnline.AuthorizationWebApplication/Dockerfile
+  chessonline.vuejsapp:
+    image: chessonlinevuejsapp
+    build:
+        context: './chess-online-vue-js-app'
+        dockerfile: Dockerfile
   proxy:
     image: nginx:mainline
